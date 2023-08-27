@@ -30,36 +30,36 @@
 		<div class="container site-navigation">
 			<div class="row">
 				<div class="col-6 col-md-2 col-lg-2">
-					<a href="index.html" class="logo m-0 float-start">PageOne<span class="text-primary">.</span></a>
+					<a href="{% url 'index' %}" class="logo m-0 float-start">PageOne<span class="text-primary">.</span></a>
 				</div>
 				<div class="col-md-8 d-none d-md-block col-lg-8 text-center">
 					<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu p-0 m-0 ">
-						<li><a href="index.html#home-section" class="nav-link active">Home</a></li>
+						<li><a href="{% url 'index' %}#home-section" class="nav-link active">Home</a></li>
 						<li class="has-children">
-							<a href="index.html#services-section" class="nav-link">Services</a>
+							<a href="{% url 'index' %}#services-section" class="nav-link">Services</a>
 							<ul class="dropdown">
-								<li><a href="index.html#" class="nav-link">Sub Menu One</a></li>
-								<li><a href="index.html#" class="nav-link">Sub Menu Two</a></li>
+								<li><a href="{% url 'index' %}" class="nav-link">Sub Menu One</a></li>
+								<li><a href="{% url 'index' %}#" class="nav-link">Sub Menu Two</a></li>
 								<li class="has-children">
-									<a href="index.html#" class="nav-link">Dropdown</a>
+									<a href="{% url 'index' %}#" class="nav-link">Dropdown</a>
 									<ul class="dropdown">
-										<li><a href="index.html#" class="nav-link">Sub Menu One</a></li>
-										<li><a href="index.html#" class="nav-link">Sub Menu Two</a></li>
-										<li><a href="index.html#" class="nav-link">Sub Menu Three</a></li>
+										<li><a href="{% url 'index' %}#" class="nav-link">Sub Menu One</a></li>
+										<li><a href="{% url 'index' %}#" class="nav-link">Sub Menu Two</a></li>
+										<li><a href="{% url 'index' %}#" class="nav-link">Sub Menu Three</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li><a href="index.html#process-section" class="nav-link">Process</a></li>
-						<li><a href="index.html#clients-section" class="nav-link">Clients</a></li>
-						<li><a href="index.html#about-section" class="nav-link">About</a></li>
+						<li><a href="{% url 'index' %}#process-section" class="nav-link">Process</a></li>
+						<li><a href="{% url 'index' %}#clients-section" class="nav-link">Clients</a></li>
+						<li><a href="{% url 'index' %}#about-section" class="nav-link">About</a></li>
 					</ul>
 				</div>
 				<div class="col-6 col-md-2 col-lg-2">
 					<ul class="js-clone-nav d-none d-lg-inline-block text-end float-end site-menu p-0 m-0 ">
-						<li><a href="index.html#contact-section" class="nav-link">Contact</a></li>
+						<li><a href="{% url 'index' %}#contact-section" class="nav-link">Contact</a></li>
 					</ul>
-					<a href="index.html#"
+					<a href="{% url 'index' %}#"
 						class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
 						data-toggle="collapse" data-target="#main-navbar">
 						<span></span>
@@ -89,16 +89,16 @@
 					<div class="row">
 						<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 							<ul class="list-unstyled links-underline">
-								<li><a href="index.html#">Technology</a></li>
-								<li><a href="index.html#">Marketing</a></li>
-								<li><a href="index.html#">Product &amp; Design</a></li>
+								<li><a href="{% url 'index' %}#">Technology</a></li>
+								<li><a href="{% url 'index' %}#">Marketing</a></li>
+								<li><a href="{% url 'index' %}#">Product &amp; Design</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
 							<ul class="list-unstyled links-underline">
-								<li><a href="index.html#">Strategic Consulting</a></li>
-								<li><a href="index.html#">Business Synergies</a></li>
-								<li><a href="index.html#">Fundrising</a></li>
+								<li><a href="{% url 'index' %}#">Strategic Consulting</a></li>
+								<li><a href="{% url 'index' %}#">Business Synergies</a></li>
+								<li><a href="{% url 'index' %}#">Fundrising</a></li>
 							</ul>
 						</div>
 					</div>
@@ -118,7 +118,7 @@
 					<p class="mb-4"><strong class="text-black">Separated they live in Bookmarksgrove</strong> right at
 						the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far
 						from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					<p><a href="index.html#contact-section" class="btn btn-primary me-4">Get In Touch</a></p>
+					<p><a href="{% url 'index' %}#contact-section" class="btn btn-primary me-4">Get In Touch</a></p>
 				</div>
 			</div>
 			<div class="row justify-content-center g-5">
@@ -127,7 +127,7 @@
 						<a href="{% static 'images/img_1.jpg' %}" class="glightbox d-block mb-4 thumb"><img
 								src="{% static 'images/img_1.jpg' %}" alt="Image" class="img-fluid"></a>
 						<div class="">
-							<h3 class="mb-3"><a href="index.html#">Graphic Design</a></h3>
+							<h3 class="mb-3"><a href="{% url 'index' %}#">Graphic Design</a></h3>
 							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
 								language ocean. Far far away, behind the word mountains, far from the countries Vokalia
 								and Consonantia, there live the blind texts.</p>
@@ -139,7 +139,7 @@
 						<a href="{% static 'images/img_2.jpg' %}" class="glightbox d-block mb-4 thumb"><img
 								src="{% static 'images/img_2.jpg' %}" alt="Image" class="img-fluid"></a>
 						<div class="">
-							<h3 class="mb-3"><a href="index.html#">Web Development</a></h3>
+							<h3 class="mb-3"><a href="{% url 'index' %}#">Web Development</a></h3>
 							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
 								language ocean. Far far away, behind the word mountains, far from the countries Vokalia
 								and Consonantia, there live the blind texts.</p>
@@ -151,7 +151,7 @@
 						<a href="{% static 'images/img_3.jpg' %}" class="glightbox d-block mb-4 thumb"><img
 								src="{% static 'images/img_3.jpg' %}" alt="Image" class="img-fluid"></a>
 						<div class="">
-							<h3 class="mb-3"><a href="index.html#">Branding</a></h3>
+							<h3 class="mb-3"><a href="{% url 'index' %}#">Branding</a></h3>
 							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
 								language ocean. Far far away, behind the word mountains, far from the countries Vokalia
 								and Consonantia, there live the blind texts.</p>
@@ -163,7 +163,7 @@
 						<a href="{% static 'images/img_4.jpg' %}" class="glightbox d-block mb-4 thumb"><img
 								src="{% static 'images/img_4.jpg' %}" alt="Image" class="img-fluid"></a>
 						<div class="">
-							<h3 class="mb-3"><a href="index.html#">Iconography</a></h3>
+							<h3 class="mb-3"><a href="{% url 'index' %}#">Iconography</a></h3>
 							<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
 								language ocean. Far far away, behind the word mountains, far from the countries Vokalia
 								and Consonantia, there live the blind texts.</p>
@@ -185,7 +185,7 @@
 					<p class="mb-4"><strong class="text-black">Separated they live in Bookmarksgrove</strong> right at
 						the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far
 						from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					<p><a href="index.html#" class="btn btn-primary me-4">Learn More</a> <a href="index.html#"
+					<p><a href="{% url 'index' %}#" class="btn btn-primary me-4">Learn More</a> <a href="{% url 'index' %}#"
 							class="link-muted">Scroll down</a></p>
 				</div>
 			</div>
@@ -325,7 +325,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
 					<div class="service-2">
 						<span class="flaticon-vector"></span>
-						<h3 class="mb-4"><a href="index.html#">Illustration</a></h3>
+						<h3 class="mb-4"><a href="{% url 'index' %}#">Illustration</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
 							Semantics, a large language ocean.</p>
@@ -334,7 +334,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
 					<div class="service-2">
 						<span class="flaticon-chat"></span>
-						<h3 class="mb-4"><a href="index.html#">24/7 Support</a></h3>
+						<h3 class="mb-4"><a href="{% url 'index' %}#">24/7 Support</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
 							Semantics, a large language ocean.</p>
@@ -343,7 +343,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
 					<div class="service-2">
 						<span class="flaticon-settings"></span>
-						<h3 class="mb-4"><a href="index.html#">Easy to use</a></h3>
+						<h3 class="mb-4"><a href="{% url 'index' %}#">Easy to use</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
 							Semantics, a large language ocean.</p>
@@ -352,7 +352,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
 					<div class="service-2">
 						<span class="flaticon-monitor"></span>
-						<h3 class="mb-4"><a href="index.html#">Web development</a></h3>
+						<h3 class="mb-4"><a href="{% url 'index' %}#">Web development</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
 							Semantics, a large language ocean.</p>
@@ -361,7 +361,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="100">
 					<div class="service-2">
 						<span class="flaticon-paper-plane"></span>
-						<h3 class="mb-4"><a href="index.html#">Intuitive</a></h3>
+						<h3 class="mb-4"><a href="{% url 'index' %}#">Intuitive</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
 							Semantics, a large language ocean.</p>
@@ -370,7 +370,7 @@
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-5" data-aos="fade-up" data-aos-delay="200">
 					<div class="service-2">
 						<span class="flaticon-book"></span>
-						<h3 class="mb-4"><a href="index.html#">Documentation</a></h3>
+						<h3 class="mb-4"><a href="{% url 'index' %}#">Documentation</a></h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
 							there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
 							Semantics, a large language ocean.</p>
@@ -412,69 +412,69 @@
 			<div class="row g-5 justify-content-center">
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
 					<div class="team">
-						<a href="index.html#" class="thumb mb-3"><img src="{% static 'images/person_1.jpg' %}"
+						<a href="{% url 'index' %}#" class="thumb mb-3"><img src="{% static 'images/person_1.jpg' %}"
 								alt="Image" class="img-fluid"></a>
-						<h3><a href="index.html#">Bradley Costa</a></h3>
+						<h3><a href="{% url 'index' %}#">Bradley Costa</a></h3>
 						<span class="mb-4 text-black-50 d-block">CEO, Partner</span>
 						<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
 							Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
 							coast of the Semantics, a large language ocean.</p>
 						<ul class="list-unstyled social">
-							<li><a href="index.html#"><span class="icon-instagram"></span></a></li>
-							<li><a href="index.html#"><span class="icon-twitter"></span></a></li>
-							<li><a href="index.html#"><span class="icon-facebook"></span></a></li>
-							<li><a href="index.html#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-instagram"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-twitter"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-facebook"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-linkedin"></span></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
 					<div class="team">
-						<a href="index.html#" class="thumb mb-3"><img src="{% static 'images/person_2.jpg' %}"
+						<a href="{% url 'index' %}#" class="thumb mb-3"><img src="{% static 'images/person_2.jpg' %}"
 								alt="Image" class="img-fluid"></a>
-						<h3><a href="index.html#">Chanice Muir</a></h3>
+						<h3><a href="{% url 'index' %}#">Chanice Muir</a></h3>
 						<span class="mb-4 text-black-50 d-block">CTO, Partner</span>
 						<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
 							Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
 							coast of the Semantics, a large language ocean.</p>
 						<ul class="list-unstyled social">
-							<li><a href="index.html#"><span class="icon-instagram"></span></a></li>
-							<li><a href="index.html#"><span class="icon-twitter"></span></a></li>
-							<li><a href="index.html#"><span class="icon-facebook"></span></a></li>
-							<li><a href="index.html#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-instagram"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-twitter"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-facebook"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-linkedin"></span></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
 					<div class="team">
-						<a href="index.html#" class="thumb mb-3"><img src="{% static 'images/person_3.jpg' %}"
+						<a href="{% url 'index' %}#" class="thumb mb-3"><img src="{% static 'images/person_3.jpg' %}"
 								alt="Image" class="img-fluid"></a>
-						<h3><a href="index.html#">Alisha Ellison</a></h3>
+						<h3><a href="{% url 'index' %}#">Alisha Ellison</a></h3>
 						<span class="mb-4 text-black-50 d-block">Web Designer</span>
 						<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
 							Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
 							coast of the Semantics, a large language ocean.</p>
 						<ul class="list-unstyled social">
-							<li><a href="index.html#"><span class="icon-instagram"></span></a></li>
-							<li><a href="index.html#"><span class="icon-twitter"></span></a></li>
-							<li><a href="index.html#"><span class="icon-facebook"></span></a></li>
-							<li><a href="index.html#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-instagram"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-twitter"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-facebook"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-linkedin"></span></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
 					<div class="team">
-						<a href="index.html#" class="thumb mb-3"><img src="{% static 'images/person_4.jpg' %}"
+						<a href="{% url 'index' %}#" class="thumb mb-3"><img src="{% static 'images/person_4.jpg' %}"
 								alt="Image" class="img-fluid"></a>
-						<h3><a href="index.html#">Bradley Costa</a></h3>
+						<h3><a href="{% url 'index' %}#">Bradley Costa</a></h3>
 						<span class="mb-4 text-black-50 d-block">Web Developer</span>
 						<p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
 							Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
 							coast of the Semantics, a large language ocean.</p>
 						<ul class="list-unstyled social">
-							<li><a href="index.html#"><span class="icon-instagram"></span></a></li>
-							<li><a href="index.html#"><span class="icon-twitter"></span></a></li>
-							<li><a href="index.html#"><span class="icon-facebook"></span></a></li>
-							<li><a href="index.html#"><span class="icon-linkedin"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-instagram"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-twitter"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-facebook"></span></a></li>
+							<li><a href="{% url 'index' %}#"><span class="icon-linkedin"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -557,9 +557,9 @@
 						</div>
 						<div class="widget">
 							<ul class="list-unstyled social">
-								<li><a href="index.html#"><span class="icon-twitter"></span></a></li>
-								<li><a href="index.html#"><span class="icon-instagram"></span></a></li>
-								<li><a href="index.html#"><span class="icon-facebook"></span></a></li>
+								<li><a href="{% url 'index' %}#"><span class="icon-twitter"></span></a></li>
+								<li><a href="{% url 'index' %}#"><span class="icon-instagram"></span></a></li>
+								<li><a href="{% url 'index' %}#"><span class="icon-facebook"></span></a></li>
 							</ul>
 						</div>
 					</div>
@@ -567,9 +567,9 @@
 						<div class="widget">
 							<h3 class="heading">Pages</h3>
 							<ul class="links list-unstyled">
-								<li><a href="index.html#">Blog</a></li>
-								<li><a href="index.html#">About</a></li>
-								<li><a href="index.html#">Contact</a></li>
+								<li><a href="{% url 'index' %}#">Blog</a></li>
+								<li><a href="{% url 'index' %}#">About</a></li>
+								<li><a href="{% url 'index' %}#">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -577,9 +577,9 @@
 						<div class="widget">
 							<h3 class="heading">Resources</h3>
 							<ul class="links list-unstyled">
-								<li><a href="index.html#">Blog</a></li>
-								<li><a href="index.html#">About</a></li>
-								<li><a href="index.html#">Contact</a></li>
+								<li><a href="{% url 'index' %}#">Blog</a></li>
+								<li><a href="{% url 'index' %}#">About</a></li>
+								<li><a href="{% url 'index' %}#">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -587,11 +587,11 @@
 						<div class="widget">
 							<h3 class="heading">Contact</h3>
 							<ul class="list-unstyled quick-info links">
-								<li class="email"><a href="index.html#"><span class="__cf_email__"
+								<li class="email"><a href="{% url 'index' %}#"><span class="__cf_email__"
 											data-cfemail="aec7c0c8c1eedbc0dadccbcb80cdc1">[email&#160;protected]</span></a>
 								</li>
-								<li class="phone"><a href="index.html#">+1 222 212 3819</a></li>
-								<li class="address"><a href="index.html#">43 Raymouth Rd. Baltemoer, London 3910</a>
+								<li class="phone"><a href="{% url 'index' %}#">+1 222 212 3819</a></li>
+								<li class="address"><a href="{% url 'index' %}#">43 Raymouth Rd. Baltemoer, London 3910</a>
 								</li>
 							</ul>
 						</div>
@@ -612,8 +612,8 @@
 						</p>
 					</div>
 					<div class="col-md-6 text-md-end">
-						<a href="index.html#" class="mx-2">Terms</a>
-						<a href="index.html#" class="mx-2">Privacy</a>
+						<a href="{% url 'index' %}#" class="mx-2">Terms</a>
+						<a href="{% url 'index' %}#" class="mx-2">Privacy</a>
 					</div>
 				</div>
 			</div>
